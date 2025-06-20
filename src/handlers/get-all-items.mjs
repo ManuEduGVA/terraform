@@ -19,7 +19,7 @@ export const getAllItemsHandler = async (event) => {
     );
   }
   // All log statements are written to CloudWatch
-  console.info("received:", event);
+  console.info("Recibido:", event);
 
   // get all items from the table (only first 1MB data, you can use `LastEvaluatedKey` to get the rest of data)
   // https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB/DocumentClient.html#scan-property
